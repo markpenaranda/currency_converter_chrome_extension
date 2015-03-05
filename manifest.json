@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Currency Converter",
+  "description": "A handy currency converter",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "assets/cc_icon.png",
+    "default_popup": "index.html"
+  },
+  "icons" : {
+      "16" : "assets/cc_icon.png"
+    },
+   "background": {
+    "scripts": ["actions/right_click.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "https://ajax.googleapis.com/"
+  ]
+}
